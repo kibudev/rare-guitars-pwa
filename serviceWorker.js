@@ -1,4 +1,4 @@
-const staticDevGuitars = "dev-guitars-site-v1"
+const staticRareGuitars = "rare-guitars-site-v1"
 const assets = [
   "/",
   "/index.html",
@@ -17,7 +17,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevGuitars).then(cache => {
+    caches.open(staticRareGuitars).then(cache => {
       cache.addAll(assets)
     })
   )
